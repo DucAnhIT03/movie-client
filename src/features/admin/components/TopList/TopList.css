@@ -1,0 +1,97 @@
+.top-list {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.top-list h3 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.list-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+
+.top-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.top-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.top-list-item:hover {
+  background: #f5f5f5;
+}
+
+.item-rank {
+  flex-shrink: 0;
+}
+
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #333;
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+  color: #333;
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #cd7f32, #daa520);
+  color: white;
+}
+
+.rank-4,
+.rank-5 {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-revenue {
+  font-size: 0.85rem;
+  color: #1e3c72;
+  font-weight: 600;
+}
+

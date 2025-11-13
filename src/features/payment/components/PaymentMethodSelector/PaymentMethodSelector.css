@@ -1,0 +1,66 @@
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+.payment-method:hover {
+  border-color: #E50914;
+}
+
+.payment-method.selected {
+  border-color: #E50914;
+  background-color: rgba(229, 9, 20, 0.1);
+}
+
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.payment-method.selected .custom-radio {
+  border-color: #E50914;
+  background-color: #E50914;
+}
+
+.checkmark {
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.payment-method img {
+  width: 60px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.payment-method span:last-child {
+  color: #fff;
+  font-weight: 500;
+}

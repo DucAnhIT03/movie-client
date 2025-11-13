@@ -1,0 +1,66 @@
+/* ===== SCHEDULE ===== */
+.schedule {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: #141414;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.date.active {
+  background: #dc2626;
+  color: #fff;
+  border-color: #dc2626;
+}
+
+.note {
+  color: #f59b2b;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.ticket-times {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ticket-times button {
+  background: #111;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 20px;
+  padding: 10px 65px;
+  width: 167px;
+  cursor: pointer;
+}
+
+.ticket-times button:hover {
+  background: #e63946;
+}
+
+/* === Responsive cho Tablet & Mobile === */
+@media (max-width: 1440px) {
+  .note {
+    margin: 20px 10px;
+  }
+}
+
+/* === Mobile nhỏ (≤480px) === */
+@media (max-width: 390px) { 
+  .note {
+    margin: 20px 10px;
+  }
+}

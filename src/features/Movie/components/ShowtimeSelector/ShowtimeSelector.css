@@ -1,0 +1,290 @@
+.showtime-selector {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.date {
+  min-width: 65px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.date:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  background: #f8f9ff;
+}
+
+.date.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.date.has-showtimes {
+  position: relative;
+}
+
+.date.has-showtimes::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background: #48bb78;
+  border-radius: 50%;
+}
+
+.date.active.has-showtimes::after {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.date .month {
+  font-size: 11px;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1.2;
+}
+
+.date.active .month {
+  opacity: 1;
+}
+
+.date h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0;
+  color: #2d3748;
+  line-height: 1.2;
+}
+
+.date.active h3 {
+  color: white;
+}
+
+.date .day {
+  font-size: 11px;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1.2;
+}
+
+.date.active .day {
+  opacity: 1;
+}
+
+.note {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 0 auto 25px auto;
+  max-width: 100%;
+  font-size: 13px;
+  color: #856404;
+  line-height: 1.5;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.15);
+}
+
+.note strong {
+  color: #856404;
+  font-weight: 600;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: #718096;
+  font-size: 16px;
+}
+
+.showtimes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.screen-showtimes {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.screen-showtimes:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.screen-name {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 600;
+  text-align: center;
+}
+
+.screen-name strong {
+  color: #667eea;
+  font-weight: 700;
+}
+
+.ticket-times {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.time-btn {
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 70px;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+}
+
+.time-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+  border-color: #667eea;
+}
+
+.time-btn:active {
+  transform: translateY(0);
+}
+
+.no-showtimes {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.no-showtimes p {
+  color: #718096;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .showtime-selector {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .dates {
+    gap: 8px;
+  }
+
+  .date {
+    min-width: 60px;
+    padding: 8px 12px;
+  }
+
+  .date h3 {
+    font-size: 20px;
+  }
+
+  .date .month,
+  .date .day {
+    font-size: 10px;
+  }
+
+  .note {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+
+  .screen-showtimes {
+    padding: 15px 18px;
+  }
+
+  .screen-name {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .ticket-times {
+    gap: 8px;
+  }
+
+  .time-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-width: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showtime-selector {
+    padding: 0 10px;
+  }
+
+  .dates {
+    gap: 6px;
+  }
+
+  .date {
+    min-width: 55px;
+    padding: 8px 10px;
+  }
+
+  .date h3 {
+    font-size: 18px;
+  }
+
+  .date .month,
+  .date .day {
+    font-size: 9px;
+  }
+
+  .note {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+
+  .time-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+    min-width: 60px;
+  }
+}
+

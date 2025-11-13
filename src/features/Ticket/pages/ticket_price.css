@@ -1,0 +1,145 @@
+.ticket-section {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.ticket-section h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.ticket-section h1.price {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.ticket-section .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* === BẢNG GIÁ === */
+.ticket-table {
+  background: var(--background-color);
+  border-radius: 8px;
+  color: #ccc;
+}
+
+.ticket-table h2 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: #0d0d0d;
+  color: #eee;
+}
+
+.vip {
+  color: #f9d71c;
+  font-weight: bold;
+}
+
+.sweetbox {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.price-note {
+  color: #ccc;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+/* === QUY ĐỊNH, GHI CHÚ === */
+.rules,
+.priority {
+  line-height: 1.7;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.rules strong,
+.priority strong {
+  color: #fff;
+}
+
+.priority {
+  text-align: left;
+  margin-top: 20px;
+  color: #ccc;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.priority strong {
+  color: #fff;
+}
+
+.priority ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.priority li {
+  margin-bottom: 6px;
+}
+
+.priority h3 {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.priority .object {
+  list-style-type: none;
+}
+
+.rules p {
+  margin-top: 12px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.line {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.ticket-end {
+  color: #fff;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.ticket-end p {
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.ticket-end .movie-room {
+  font-style: italic;
+}
